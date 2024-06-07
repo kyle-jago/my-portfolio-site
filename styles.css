@@ -126,6 +126,7 @@ a:link {
     text-align: center;
     min-height: 400px;
     flex-shrink: 0;
+    border: 5px solid black;
 }
 
 .skill-title {
