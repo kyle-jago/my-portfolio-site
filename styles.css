@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #561C24;
+    background-color: #627254;
  }
  
  div > h1 {
@@ -53,6 +53,7 @@ body {
     font-style: normal;
     padding-bottom: 32px;
     border-bottom: 1px solid #E8D8C4;
+    border-radius: 50%;
 }
 
 .card-image {
@@ -71,7 +72,7 @@ body {
 
 .card-button {
     margin-top: 50px;
-    background-color: #6D2932;
+    background-color: #627254;
     color: white;
     border: 0;
     border-radius: 10px;
@@ -93,8 +94,9 @@ a:link {
     align-items: center;
     gap: 20px;
     margin-top: 50px;
-    margin-bottom: 60px;
     flex-wrap: wrap;
+    padding-bottom: 50px;
+    background-color: #627254;
 }
 
 .skill-card {
@@ -103,7 +105,7 @@ a:link {
     background-color: #E8D8C4;
     border-radius: 5px;
     text-align: center;
-    min-height: 362px;
+    min-height: 400px;
     flex-shrink: 0;
 }
 
@@ -111,8 +113,8 @@ a:link {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
+    font-family: "Playfair", serif;
+    font-weight: bold;
     font-style: normal;
     border-bottom: 1px solid black;
     padding-bottom: 5px;
@@ -120,10 +122,46 @@ a:link {
 
 .skill-desc {
     font-size: 20px;
-    font-family: "Freeman", sans-serif;
+    font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
     padding-top: 5px;
 }
 
+@media (max-width: 600px) {
+    .skill-container {
+        max-height: 500px;
+    }
+    .navbar {
+        display: none;
+    }
+}
+
 /* Retrospectively, having a class called -title and then one -tile was not good forethinking */
+
+
+
+
+/* Middle main page content section */
+
+.navbar {
+    flex-shrink: 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e5b43;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+}
