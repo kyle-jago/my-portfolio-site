@@ -4,10 +4,29 @@
     box-sizing: border-box;
 }
 
+/* comment
 body {
     background-color: #627254;
  }
- 
+ */
+
+ body {
+    background: linear-gradient(45deg, #3b4432, #627254, #728065, #818e76);
+    animation: gradientanimation 15s ease infinite;
+ }
+
+ @keyframes gradientanimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+ }
+
  div > h1 {
      font-size: 60px;
  }
@@ -15,6 +34,7 @@ body {
  div > h2 {
      font-size: 40px;
  }
+
 
 /* ABOVE IS GLOBAL, DO NOT TOUCH */
 
@@ -96,7 +116,6 @@ a:link {
     margin-top: 50px;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    background-color: #627254;
 }
 
 .skill-card {
