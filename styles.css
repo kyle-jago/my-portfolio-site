@@ -10,11 +10,6 @@ body {
  }
  */
 
- body {
-    background: linear-gradient(45deg, #3b4432, #627254, #728065, #818e76);
-    animation: gradientanimation 15s ease infinite;
- }
-
  @keyframes gradientanimation {
     0% {
         background-position: 0% 50%;
@@ -38,7 +33,10 @@ body {
 
 /* ABOVE IS GLOBAL, DO NOT TOUCH */
 
-
+.index-body {
+    background: linear-gradient(45deg, #3b4432, #627254, #728065, #818e76);
+    animation: gradientanimation 15s ease infinite;
+}
 
 /*Style header*/
 
@@ -105,6 +103,20 @@ body {
 a:link {
     color: white;
 }
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+/* Hopefully, one day, someone realises doing this is stupid, your memory can't be this bad.. */
 
 /* Skill Tile Styling */
 
@@ -182,3 +194,66 @@ nav ul li {
     padding-right: 10px;
     list-style-type: none;
 }
+
+/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+
+.body-jsapps {
+    background: linear-gradient(45deg, #C40C0C, #FF6500, #FF8A08, #FFC100);
+    animation: gradientanimation 15s ease infinite;
+    
+}
+
+.navbar-jsapps ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF8A08;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar-jsapps ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.header-info-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.header-card-background {
+    max-height: 200px;
+    max-width: 200px;
+    background-color: #E8D8C4;
+    border-radius: 5px;
+}
+
+.header-card-desc {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+
+
+
+/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
