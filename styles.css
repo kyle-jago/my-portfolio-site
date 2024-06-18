@@ -4,256 +4,96 @@
     box-sizing: border-box;
 }
 
-/* comment
-body {
-    background-color: #627254;
- }
- */
-
- @keyframes gradientanimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 50% 100%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
- }
-
- div > h1 {
-     font-size: 60px;
- }
- 
- div > h2 {
-     font-size: 40px;
- }
-
-
-/* ABOVE IS GLOBAL, DO NOT TOUCH */
-
-.index-body {
-    background: linear-gradient(45deg, #3b4432, #627254, #728065, #818e76);
-    animation: gradientanimation 15s ease infinite;
-}
-
-/*Style header*/
-
-.title-container {
+.top-nav-bar-container {
     display: flex;
-    justify-content: center;
-    align-content: flex-start;
-    padding-left: 30px;
-    text-align: center;
-    background-color: #E8D8C4;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: italic;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
-/* Style nav menu and nav functionality */
-
-
-/* Card styling and responsiveness */
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-bottom: 32px;
-    border-bottom: 1px solid #E8D8C4;
-    border-radius: 50%;
-}
-
-.card-image {
-    max-width: 100px;
-    border-radius: 50%;
-    padding-top: 10px;
-}
-
-.card-background {
-    background-color: #E8D8C4;
+.left-logo-tile-nav-bar {
+    font-family: "Kanit", sans-serif;
     padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    padding-bottom: 10px;
 }
 
-.card-button {
-    margin-top: 50px;
-    background-color: #627254;
-    color: white;
-    border: 0;
-    border-radius: 10px;
-    padding: 4px;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size: 10px;
+.top-nav-items {
+    margin-left: 50px;
 }
 
-a:link {
-    color: white;
+.body-image-slider {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
-a:visited {
-    color: white;
+/* Attribution - thank you to topntp26, karn2012.2 and others for the videos */
+/* looks like we aren't doing any fun slider stuff till I learn React, gg */
+
+.hero-video {
+    animation: grayscalerator 5s linear;
+    animation-iteration-count: 1;
+    height: auto;
 }
 
-a:hover {
-    color: white;
-}
-
-a:active {
+.hero-txt {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-size: 2.5em;
+    position: absolute;
+    top: 200px;
+    left: 150px;
     color: white;
 }
 
-/* Hopefully, one day, someone realises doing this is stupid, your memory can't be this bad.. */
-
-/* Skill Tile Styling */
-
-.skill-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    padding-bottom: 280px;
-}
-
-.skill-card {
-    max-width: 300px;
-    padding: 20px;
-    background-color: #E8D8C4;
-    border-radius: 5px;
-    text-align: center;
-    min-height: 400px;
-    flex-shrink: 0;
-    border: 5px solid black;
-}
-
-.skill-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: "Playfair", serif;
-    font-weight: bold;
-    font-style: normal;
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
-}
-
-.skill-desc {
-    font-size: 20px;
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-top: 5px;
+.hero-txt-two {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-size: 2.5em;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    color: white;
 }
 
 @media (max-width: 600px) {
-    .skill-container {
-        max-height: 500px;
+    .hero-txt {
+        top: 150px;
+        left: 50px;
     }
-    .navbar {
+    .hero-txt-two {
+        top: 200px;
+        left: 50px;
+    }
+}
+
+@media (max-width: 300px) {
+    .hero-txt {
+        display: none;
+    }
+    .hero-txt-two {
         display: none;
     }
 }
 
-/* Retrospectively, having a class called -title and then one -tile was not good forethinking */
-
-
-
-
-/* Middle main page content section */
-
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4e5b43;
-    padding-bottom: 20px;
-    padding-top: 15px;
-    justify-content: space-evenly;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+@keyframes grayscalerator {
+    0% {
+        filter:grayscale(100%);
+    }
+    100% {
+        filter:grayscale(0%);
+    }
 }
 
-nav ul li {
-    padding-left: 10px;
-    padding-right: 10px;
-    list-style-type: none;
+.circle-name-logo {
+    animation: spinup 3s linear;
+    animation-iteration-count: 1;
 }
 
-/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
-/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
-/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
-/* BELOW ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
-
-.body-jsapps {
-    background: linear-gradient(45deg, #C40C0C, #FF6500, #FF8A08, #FFC100);
-    animation: gradientanimation 15s ease infinite;
-    
-}
-
-.navbar-jsapps ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF8A08;
-    padding-bottom: 20px;
-    padding-top: 15px;
-    justify-content: space-evenly;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.navbar-jsapps ul li {
-    padding-left: 10px;
-    padding-right: 10px;
-    list-style-type: none;
-}
-
-.header-info-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-shrink: 0;
-}
-
-.header-card-background {
-    max-height: 200px;
-    max-width: 200px;
-    background-color: #E8D8C4;
-    border-radius: 5px;
-}
-
-.header-card-desc {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
+@keyframes spinup {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 
 
-
-
-/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
-/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
-/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
-/* ABOVE ONLY STYLING FOR THE JS-APPS PAGE SHOULD EXIST */
+/* C 2024, 0x000000F, nar32gBzxWxcC9z0__tend,texnt && read(int) */
