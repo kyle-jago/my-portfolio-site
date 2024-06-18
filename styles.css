@@ -11,74 +11,18 @@
 
 .left-logo-tile-nav-bar {
     font-family: "Kanit", sans-serif;
+    font-weight: 400;
     padding-left: 10px;
 }
 
-.top-nav-items {
-    margin-left: 50px;
-}
-
-.body-image-slider {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+.nav-menu-icon {
+    margin-left: auto;
+    align-content: center;
+    margin-right: 20px;
 }
 
 /* Attribution - thank you to topntp26, karn2012.2 and others for the videos */
 /* looks like we aren't doing any fun slider stuff till I learn React, gg */
-
-.hero-video {
-    animation: grayscalerator 5s linear;
-    animation-iteration-count: 1;
-    height: auto;
-}
-
-.hero-txt {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200;
-    font-size: 2.5em;
-    position: absolute;
-    top: 200px;
-    left: 150px;
-    color: white;
-}
-
-.hero-txt-two {
-    font-family: "Kanit", sans-serif;
-    font-weight: 200;
-    font-size: 2.5em;
-    position: absolute;
-    top: 250px;
-    left: 150px;
-    color: white;
-}
-
-@media (max-width: 600px) {
-    .hero-txt {
-        top: 150px;
-        left: 50px;
-    }
-    .hero-txt-two {
-        top: 200px;
-        left: 50px;
-    }
-}
-
-@media (max-width: 300px) {
-    .hero-txt {
-        display: none;
-    }
-    .hero-txt-two {
-        display: none;
-    }
-}
-
-@keyframes grayscalerator {
-    0% {
-        filter:grayscale(100%);
-    }
-    100% {
-        filter:grayscale(0%);
-    }
-}
 
 .circle-name-logo {
     animation: spinup 3s linear;
@@ -94,6 +38,124 @@
     }
 }
 
+.body-hero-content-container {
+    display: flex;
+    min-height: 500px;
+    min-width: auto;
+    background-image: linear-gradient(-90deg, #059212, #059299);
+}
 
+.body-hero-content {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    align-self: center;
+    margin-left: 20px;
+}
 
-/* C 2024, 0x000000F, nar32gBzxWxcC9z0__tend,texnt && read(int) */
+.skill-nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.skill-icon {
+    padding: 10px;
+    cursor: default;
+    color: #059212;
+}
+
+.skill-icon:hover {
+    animation: colourshift 3s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes colourshift {
+    0% {
+        color: #059212;
+    }
+    50% {
+        color: #059299;
+    }
+    100% {
+        color: #059212;
+    }
+}
+
+.hero-card {
+    justify-content: flex-end;
+    max-height: 400px;
+    flex-shrink: 0;
+    margin-left: auto;
+    max-height: auto;
+    margin-right: 125px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Kanit", sans-serif;
+    border: 2px solid white;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .body-hero-content-container {
+        flex-direction: column;
+    }
+    .hero-card {
+        margin-left: 120px;
+    }
+}
+
+.hero-card-img {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    max-height: 75px;
+}
+
+.hero-content-container h3 {
+    padding-bottom: 5px;
+}
+
+.hero-content-container p {
+    padding-bottom: 5px;
+}
+
+.contact-me {
+    color: #fff;
+}
+
+.body-header {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Kanit", sans-serif;
+    padding-bottom: 40px;
+}
+
+.body-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.body-content-container {
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,.3);
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+}
+
+.body-content-container img {
+    width: 200px;
+    border-radius: 5px;
+    border: 3px solid  black;
+}
+
+.body-content-container  > p {
+    padding: 5px
+}
+/* C 2024, 0x000000F, nar32gBzxWxcC9z0__tend,texnt && read(int) */ 
