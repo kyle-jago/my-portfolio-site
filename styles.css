@@ -63,7 +63,7 @@
     display: flex;
     min-height: 500px;
     min-width: auto;
-    background-image: linear-gradient(-45deg, #059212, #058310, #1e9da3, #059299);
+    background-image: linear-gradient(-45deg, #059212, #059299);
 }
 
 .body-hero-content {
