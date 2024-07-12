@@ -121,12 +121,15 @@
     color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .body-hero-content-container {
         flex-direction: column;
     }
     .hero-card {
         margin-left: 120px;
+    }
+    .body-hero-content {
+        margin-top: 50px;
     }
 }
 
@@ -159,6 +162,10 @@
     padding-top: 20px;
     font-family: "Kanit", sans-serif;
     padding-bottom: 40px;
+}
+
+.body-hero-content {
+    flex-shrink: 0;
 }
 
 .body-content {
