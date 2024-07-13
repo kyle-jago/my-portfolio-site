@@ -21,9 +21,6 @@
     margin-right: 20px;
 }
 
-/* Attribution - thank you to topntp26, karn2012.2 and others for the videos */
-/* looks like we aren't doing any fun slider stuff till I learn React, gg */
-
 .circle-name-logo {
     animation: spinup 3s linear;
     animation-iteration-count: 1;
