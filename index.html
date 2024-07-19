@@ -17,7 +17,15 @@
 <header class="top-nav-bar-container">
     <div class="left-logo-tile-nav-bar"><h1>.kyle</h1></div>
     <img src="./assets/img/circle-logo.png" alt="circle logo" class="circle-name-logo" height="25px">
-    <div class="nav-menu-icon"><span class="material-symbols-outlined">menu</span></div>
+    <button class="nav-menu-icon"><span class="material-symbols-outlined" onclick="menuFunction()">menu</span></button>
+    <div class="burg-menu">
+        <div class="burg-menu-content">
+            <ul class="burg-menu-list">
+                <li class="burg-list-item">About</li>
+                <li class="burg-list-item">JS Frankensteins</li>
+            </ul>
+        </div>
+    </div>
 </header>
 <body>
 <div class="body-hero-content-container">
@@ -36,9 +44,9 @@
     </div>
 </div>
 <div class="skill-nav-container">
-    <div class="skill-icon"><span class="material-symbols-outlined">mode_heat</span></div>
-    <div class="skill-icon"><span class="material-symbols-outlined">neurology</span></div>
-    <div class="skill-icon"><span class="material-symbols-outlined">package_2</span></div>
+    <button class="skill-icon" onclick="fireIcon()"><span class="material-symbols-outlined">mode_heat</span></button>
+    <button class="skill-icon" onclick="brainIcon()"><span class="material-symbols-outlined">neurology</span></button>
+    <button class="skill-icon" onclick="boxIcon()"><span class="material-symbols-outlined">package_2</span></button>
 </div>
 <h1 class="body-header">Introduction</h1>
 <div class="body-content">

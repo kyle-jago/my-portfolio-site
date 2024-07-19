@@ -19,6 +19,8 @@
     margin-left: auto;
     align-content: center;
     margin-right: 20px;
+    border: 0;
+    background-color: #fff;
 }
 
 .circle-name-logo {
@@ -82,23 +84,9 @@
     padding: 10px;
     cursor: default;
     color: #059212;
-}
-
-.skill-icon:hover {
-    animation: colourshift 3s ease;
-    animation-iteration-count: 1;
-}
-
-@keyframes colourshift {
-    0% {
-        color: #059212;
-    }
-    50% {
-        color: #059299;
-    }
-    100% {
-        color: #059212;
-    }
+    border: 0;
+    background-color: white;
+    cursor: pointer;
 }
 
 .hero-card {
@@ -197,4 +185,19 @@
     min-width: 20px;
     cursor: pointer;
     border: 1px solid #000;
+}
+
+.burg-menu {
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+}
+
+.burg-menu-content {
+    text-align: right;
+    display: none;
+}
+
+.burg-menu-list {
+    list-style-type: none;
 }
