@@ -49,6 +49,8 @@ function boxIcon() {
     getBanner.style.backgroundImage = "linear-gradient(45deg, #AF8F6F, #74512D)";
 }
 
+// Functions for my Freestyle page, which uses the random-word library //
+
 function freestyleDebug() {
     var fs = document.querySelector(".freestyle-pad-container");
     var fsinputone = console.log(fs.value(fs.firstElementChild));
