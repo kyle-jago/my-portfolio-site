@@ -17,6 +17,8 @@ function menuFunction() {
     
 }
 
+
+// These functions just change colours of the header background if you click on them //
 function fireIcon() {  
     var getBanner = document.querySelector(".body-hero-content-container");
     var getIcons = document.querySelectorAll(".skill-icon");
@@ -56,6 +58,8 @@ function freestyleDebugTwo(arg1, arg2, arg3) {
     console.log("Called successfully." + arg1 + arg2 + arg3);
 }
 
+
+//Dark Mode, will make it togglable later //
 function newDarkMode() {
     var getHTML = document.querySelector("html");
     var getSkillIcon = document.querySelectorAll(".skill-icon");
@@ -78,3 +82,4 @@ function newDarkMode() {
 }
 }
 
+// pew pew
