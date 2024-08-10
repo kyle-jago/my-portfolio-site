@@ -1,4 +1,3 @@
-
 function patFunc() {
     alert("You pat P!")
 }
@@ -7,11 +6,15 @@ function patFunc() {
 // Just to demonstrate basic knowledge
 // I think, even at the lowest level, showing understanding of all concepts
 // Is stronger than just knowing the ones that let you achieve your goals..
+var getMenuState = document.querySelector(".burg-menu-content");
 
 function menuFunction() {
-
-    var getMenuIcon = document.querySelector('.burg-menu-content')
-    getMenuIcon.style.display = "block";
+    if (getMenuState.style.display === "none") {
+        getMenuState.style.display = "flex";
+    } else {
+        getMenuState.style.display = "none";
+    }
+    
 }
 
 function fireIcon() {  
@@ -43,3 +46,35 @@ function boxIcon() {
     fireArray.forEach((element) => element.style.color = "#AF8F6F");
     getBanner.style.backgroundImage = "linear-gradient(45deg, #AF8F6F, #74512D)";
 }
+
+function freestyleDebug() {
+    var fs = document.querySelector(".freestyle-pad-container");
+    var fsinputone = console.log(fs.value(fs.firstElementChild));
+
+}
+function freestyleDebugTwo(arg1, arg2, arg3) {
+    console.log("Called successfully." + arg1 + arg2 + arg3);
+}
+
+function newDarkMode() {
+    var getHTML = document.querySelector("html");
+    var getSkillIcon = document.querySelectorAll(".skill-icon");
+    var getNavIcon = document.querySelector(".nav-menu-icon");
+    var getBdyCtn = document.querySelector(".body-content-container");
+    var getLogo = document.querySelector(".left-logo-tile-nav-bar");
+    var getSkills = document.querySelector(".skill-nav-container");
+
+    if (getNavIcon.style.backgroundColor = "#fff") {
+    getHTML.style.backgroundColor = "#000";
+    getHTML.style.color = "#fff";
+    getNavIcon.style.color = "#fff";
+    getNavIcon.style.backgroundColor = "#000";
+    getBdyCtn.style.border = "3px solid #fff";
+    getLogo.style.color = "#fff";
+
+    for (i=0; i<getSkillIcon.length; i++) {
+        getSkillIcon[i].style.backgroundColor = "#000";
+    }
+}
+}
+

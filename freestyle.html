@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Freestyle Flowinator V1.0</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon"/>
+</head>
+<header class="top-nav-bar-container">
+    <div class="left-logo-tile-nav-bar"><h1><a href="index.html">.kyle</a></h1></div>
+    <img src="./assets/img/circle-logo.png" alt="circle logo" class="circle-name-logo" height="25px">
+    <button class="nav-menu-icon"><span class="material-symbols-outlined" onclick="menuFunction()">menu</span></button>
+    <div class="burg-menu">
+        <div class="burg-menu-content">
+            <ul class="burg-menu-list">
+                <li class="burg-list-item">About</li>
+                <li class="burg-list-item">JS Frankensteins</li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="freestyle-hero-content-container">
+        <div class="body-hero-content">
+            <h1 class="freestyle-hero-title">Freestyle</h1>
+            <h1 class="freestyle-hero-title">Flowinator v1.0</h1>
+        </div>
+    </div>
+    <div class="body-content">
+        <div class="body-content-container">
+            <p>This is my first project, the 'Freestyle Flowinator'</p>
+            <p>Freestyling is another hobby of mine, and I find it useful to have a random word generator running while doing so</p>
+            <p>This tool allows for you to specify the time between switching the random word and how many random words to produce.</p>
+            <p>Once you have input the count of words to produce, and the time between switching, you can press the Flow button to begin</p>
+            <p>This also includes an inbuilt audio player, where the track will be triggered once the Flow button is clicked</p>
+            <br />
+            <p>If you like this, please consider reaching out via my email to give feedback or suggestions!/p>
+            <p>(Or don't. I do not mind, things like this are for all to enjoy, regardless of circumstance)</p>
+        </div>
+    </div>
+    <div class="freestyle-pad-container">
+        <label for="wordcount">Words to produce</label>
+        <input type="text" name="wordcount">
+        <label for="interval">Time between new words</label>
+        <input type="text" name="interval">
+        <label for="yourtrack">Link to audio</label>
+        <input type="text" name="yourtrack">
+        <button class="freestyle-button" onclick="freestyleDebug()">Go!</button>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

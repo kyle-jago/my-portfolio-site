@@ -4,16 +4,25 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .top-nav-bar-container {
     display: flex;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border-bottom: 2px solid #000;
 }
+
 
 .left-logo-tile-nav-bar {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     padding-left: 10px;
+    text-decoration: none;
+    color: #000;
 }
+
 
 .nav-menu-icon {
     margin-left: auto;
@@ -21,20 +30,6 @@
     margin-right: 20px;
     border: 0;
     background-color: #fff;
-}
-
-.circle-name-logo {
-    animation: spinup 3s linear;
-    animation-iteration-count: 1;
-}
-
-@keyframes spinup {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
 }
 
 .first-hero-title {
@@ -78,6 +73,7 @@
     display: flex;
     justify-content: space-evenly;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border-top: 2px solid #000;
 }
 
 .skill-icon {
@@ -180,11 +176,12 @@
 }
 
 .pat-button {
-    border: 0;
+    border: 1px solid darkgray;
     min-height: 20px;
     min-width: 20px;
     cursor: pointer;
-    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 .burg-menu {
@@ -196,8 +193,86 @@
 .burg-menu-content {
     text-align: right;
     display: none;
+    position: absolute;
+    right: 35px;
+    top: 48px;
+    background-color: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: "Lato", sans-serif;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
 }
 
 .burg-menu-list {
     list-style-type: none;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
 }
+
+.burg-list-item {
+    padding-top: 5px;
+}
+
+/* Code specific for styles on Freestyle Flowinator project page */
+
+.freestyle-hero-title {
+    animation: fadein 3s ease;
+    animation-iteration-count: 1;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+.freestyle-hero-content-container {
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+    min-width: auto;
+    background-image: linear-gradient(35deg, #000, #ccc, #000);
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.freestyle-pad-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    animation: freestylecolorshift 5s linear infinite;
+    background-image: linear-gradient(15deg, darkred, red);
+}
+
+.freestyle-pad-container label {
+    font-size: 20px;
+    color: white;
+}
+
+.freestyle-button {
+    padding: 20px;
+    margin: 10px;
+}
+
+.pad-option {
+    max-width: 200px;
+}
+
+@keyframes freestylecolorshift {
+    0% {
+        background-position: 25% 75%;
+    }
+    50% {
+        background-position: 10% 90%;
+    }
+    100% {
+        background-position: 25% 75%;
+    }
+}
+
